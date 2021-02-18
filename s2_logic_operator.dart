@@ -3,8 +3,8 @@
 class LogicOperators{
 
   void show(){
-    // logic operator
-    print("logic operator");
+    // relation operator
+    print("relation operator");
     print("10 > 3");
     print(10 > 3);
     print("10 < 3");
@@ -39,6 +39,14 @@ class LogicOperators{
     double b = 10;
     b /= 2;
     print('b/=5 | v: ${a}');
+    //logic
+    print("logic operator");
+    bool result = true && false;
+    print('true && false -> ${result}');
+    result = true || false;
+    print('true || false -> ${result}');
+    result = !true;
+    print('!true -> ${result}');
   }
 }
 
