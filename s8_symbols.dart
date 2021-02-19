@@ -18,28 +18,28 @@ main() {
 bool checkIf_classAvailableInlibrary(Symbol libraryName, Symbol className) { 
    MirrorSystem mirrorSystem = currentMirrorSystem(); 
    LibraryMirror libMirror = mirrorSystem.findLibrary(libraryName); 
-      
-   if (libMirror != null) { 
-      print("Biblioteca encontrada"); 
-      print("verificando ... detalhes da classe .."); 
-      print("Quantidade das classes encontradas é : ${libMirror.declarations.length}"); 
-      libMirror.declarations.forEach((s, d) => print(s));  
-         
-      if (libMirror.declarations.containsKey(className)) return true; 
-      return false; 
-   } 
+
+   if (libMirror != null) {
+      print("Biblioteca encontrada");
+      print("verificando ... detalhes da classe ..");
+      print("Quantidade das classes encontradas é : ${libMirror.declarations.length}");
+      libMirror.declarations.forEach((s, d) => print(s));
+
+      if (libMirror.declarations.containsKey(className)) return true;
+      return false;
+   }
    return false;
 }
 
-void reflect_InstanceMethods(Symbol libraryName, Symbol className) { 
-   MirrorSystem mirrorSystem = currentMirrorSystem(); 
-   LibraryMirror libMirror = mirrorSystem.findLibrary(libraryName); 
-   
-   if (libMirror != null) { 
+void reflect_InstanceMethods(Symbol libraryName, Symbol className) {
+   MirrorSystem mirrorSystem = currentMirrorSystem();
+   LibraryMirror libMirror = mirrorSystem.findLibrary(libraryName);
+
+   if (libMirror != null) {
       if (libMirror.declarations.containsKey(className)) print("found class");
-      ClassMirror classMirror = libMirror.declarations[className]; 
-      
+      ClassMirror classMirror = libMirror.declarations[className];
+
       print("Quantidade de métodos de instância encontrados é ${classMirror.instanceMembers.length}");
-      classMirror.instanceMembers.forEach((s, v) => print(s)); 
-   } 
-}   
+      classMirror.instanceMembers.forEach((s, v) => print(s));
+   }
+}

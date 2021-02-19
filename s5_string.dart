@@ -36,12 +36,12 @@ void main() {
   str2 = "A"; 
   str3 = "B"; 
 
-  print("str1.compareTo(str2): ${str1.compareTo(str2)}"); 
-  print("str1.compareTo(str3): ${str1.compareTo(str3)}"); 
-  print("str3.compareTo(str2): ${str3.compareTo(str2)}"); 
+  print("str1.compareTo(str2): ${str1.compareTo(str2)}");
+  print("str1.compareTo(str3): ${str1.compareTo(str3)}");
+  print("str3.compareTo(str2): ${str3.compareTo(str2)}");
 
-  str1 = "Universidade São José"; 
-  print("O tamanho da string é: ${str1.length}"); 
+  str1 = "Universidade São José";
+  print("O tamanho da string é: ${str1.length}");
 
-  print("Code Unit do indice 0 (G): ${str1.codeUnitAt(0)}"); 
+  print("Code Unit do indice 0 (G): ${str1.codeUnitAt(0)}");
 }

@@ -1,6 +1,7 @@
 void main() { 
   
   Map details = {'username':'teste','password':'pass@123'}; 
+  //Map details = new Map();
   print(details); 
 
   details['uid'] = 'UNISJ010123'; 

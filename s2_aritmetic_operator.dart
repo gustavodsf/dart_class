@@ -20,18 +20,20 @@ class AritmeticOperators{
 
     int rest =  10 % 3;
     print(rest);
-    
 
     int number =  10;
     print("Depois");
     print(number--);
     print(number++);
+    print(number);
 
     number = 10;
     print("Antes");
     print(--number);
     print(++number);
 
+    print(number is int);
+    print(number is! String);
   }
 }
 

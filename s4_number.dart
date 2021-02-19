@@ -1,27 +1,27 @@
-void main() { 
-  int n = 3333; 
-  print(n.hashCode); 
+void main() {
+  int n = 3333;
+  print(n.hashCode);
 
-  int posNum = 33; 
-  int negNum = -33; 
+  int posNum = 33;
+  int negNum = -33;
 
-  print(posNum.isNegative); 
-  print(negNum.isNegative); 
- 
-  print(posNum.isEven); 
+  print(posNum.isNegative);
+  print(negNum.isNegative);
 
-  var a = 3.3; 
-  print("The ceiling value of 3.3 = ${a.ceil()}"); 
+  print(posNum.isEven);
 
-  print(a.compareTo(33)); 
-  print(a.compareTo(3.3)); 
-  print(a.compareTo(0)); 
+  var a = 3.3;
+  print("The ceiling value of 3.3 = ${a.ceil()}");
 
-  int n1 = 3;   
-  dynamic value = n1.toString();   
-  print( value is String ); 
+  print(a.compareTo(33));
+  print(a.compareTo(3.3));
+  print(a.compareTo(0));
 
-  double n2 = 3.123; 
-  value = n2.truncate(); 
-  print("The truncated value of 3.123 = ${value}"); 
-}  
+  int n1 = 3;
+  dynamic value = n1.toString();
+  print( value is String );
+
+  double n2 = 3.123;
+  value = n2.truncate();
+  print("The truncated value of 3.123 = ${value}");
+}

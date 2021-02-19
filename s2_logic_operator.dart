@@ -38,12 +38,12 @@ class LogicOperators{
     print('a*=2 | v: ${a}');
     double b = 10;
     b /= 2;
-    print('b/=5 | v: ${a}');
+    print('b/=2 | v: ${b}');
     //logic
     print("logic operator");
     bool result = true && false;
     print('true && false -> ${result}');
-    result = true || false;
+    result = false || true;
     print('true || false -> ${result}');
     result = !true;
     print('!true -> ${result}');
