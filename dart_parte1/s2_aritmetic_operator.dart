@@ -1,27 +1,24 @@
-
-
-class AritmeticOperators{
-
-  void show(){
-    int add =  10 + 3;
+class AritmeticOperators {
+  void show() {
+    int add = 10 + 3;
     print(add);
 
-    int sub =  10 - 3;
+    int sub = 10 - 3;
     print(sub);
 
-    int mult =  10 * 3;
+    int mult = 10 * 3;
     print(mult);
 
-    double div =  10 / 3;
+    double div = 10 / 3;
     print(div);
 
-    int divInt =  10 ~/ 3;
+    int divInt = 10 ~/ 3;
     print(divInt);
 
-    int rest =  10 % 3;
+    int rest = 10 % 3;
     print(rest);
 
-    int number =  10;
+    int number = 10;
     print("Depois");
     print(number--);
     print(number++);
@@ -37,7 +34,7 @@ class AritmeticOperators{
   }
 }
 
-void main(){
+void main() {
   AritmeticOperators operators = new AritmeticOperators();
   operators.show();
 }
